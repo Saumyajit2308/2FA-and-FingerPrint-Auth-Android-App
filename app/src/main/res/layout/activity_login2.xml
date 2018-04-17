@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/mainbg"
+    tools:context="com.pratik.twofactorauth.Login">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_email"
+        android:drawableLeft="@drawable/ic_email"
+        android:backgroundTint="#fff"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:drawableTint="#fff"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_password"
+        android:drawableLeft="@drawable/ic_vpn_key_black"
+        android:backgroundTint="#fff"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:drawableTint="#fff"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/email"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="#F7535A"
+        android:background="#fff"
+        android:layout_below="@+id/password"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="37dp" />
+
+    <TextView
+        android:id="@+id/open_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
